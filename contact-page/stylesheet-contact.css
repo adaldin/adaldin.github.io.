@@ -1,0 +1,294 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Bold.ttf');
+    src: url('../fonts/Oswald-ExtraLight.ttf');
+    src: url('../fonts/Oswald-Light.ttf');
+    src: url('../fonts/Oswald-Medium.ttf');
+    src: url('../fonts/Oswald-Regular.ttf');
+    src: url('../fonts/Oswald-SemiBold.ttf');
+    src: url('../fonts/Oswald-VariableFont_wght.ttf');
+}
+.header__container {
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Oswald';
+}
+.toggle__input--open{
+    font-size: 2rem;
+    margin: 0.5em 1em 0em 0em;
+    height: min-content;
+}
+.toggle__input--close{
+    display:none;
+    font-size: 1.5rem;
+    margin: 1em 1.5em 0em 0em;
+    height: min-content;
+    }
+
+.checkbox__button{
+    display: none;
+}
+
+.main-logo {
+    height: 7em;
+    margin-left: 1em;
+}
+.nav__container{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    transition: transform .8s ease-out; 
+    transform: translateY(-270px);
+    z-index: 100;
+    background-color: #ffffff;
+}
+.nav__container--desktop{
+    display: none;
+}
+
+.checkbox__button:checked ~ .nav__container{
+    height: fit-content;
+    transform-origin: top center;
+    transform: translateY(13vh);
+    position:absolute;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.checkbox__button:checked ~ .toggle__input--close{
+    display:block;
+}
+.checkbox__button:checked ~ .toggle__input--open{
+    display:none;
+}
+
+.menu-bar__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar__list li {
+    list-style-type: none;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.menu-bar__list li a {
+    padding: 2em 1em;
+    text-decoration: none;
+    color:#1b1c20;
+    font-size: 1rem;
+
+}
+
+.logos__container--social-media {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1em 0em 1em 0.8em;
+}
+
+.social-media__logo {
+    width: 2em;
+    height: 2em;
+    margin:0 0.2em 0 0.2em;
+    transition: transform .25s ease-in;
+}
+.contenedor-padre{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 20%),
+    url(./assets/img/img-background-form.jpg) fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'Oswald';
+    display: inline-block;
+    text-align: center;
+    top: 10px;
+    color: white;
+}
+
+h1{
+    font-size: 4em;
+    font-style: bold;
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
+h2{
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.input-nombre, .input-email, .input-edad, .input-rol, .input-fecha{
+    padding: 1em;
+    border-radius: 5px;
+    width: 75%;
+    height: 3em;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.recomendar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.seleccionar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.color__change{
+    filter: grayscale(1);
+}
+
+.recomendaciones{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+    color: white;
+}
+
+.frontend, .backend, .media, .juegos, .ux, .other{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.input-coment{
+    border-radius: 5px;
+    width: 75%;
+    height: 100px;
+    padding: 1em;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.send{
+    color: #1b1c20; 
+    width: 75%;
+    height: 25px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 30px;
+}
+.footer__container {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    background-color: #1b1c20;
+}
+.footer__text {
+    color: white;
+    font-size: 0.7rem;
+    font-family:'Oswald-Light', sans-serif;
+}
+
+
+@media (min-width: 481px){
+    .input-nombre, .input-email, .input-edad, .input-rol, .input-fecha{
+        padding: 0.5em;
+        width: 75%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header__container{
+        display: flex;
+        flex-wrap: nowrap;
+        height: min-content;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav.main__container{
+        display: none;
+    }
+    .nav__container--desktop{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: revert;
+        overflow: revert;
+        transition: none;
+        transform: none;
+        width: 100%;
+        z-index: auto;
+    }
+    .logos__container--aligner {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+    }
+    .checkbox__button:checked ~ .nav__container{
+        display:none;
+    }
+    .checkbox__button:checked ~ .toggle__input--close{
+        display:none;
+    }
+    .menu-bar__list{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .menu-bar__list li a {
+        padding: 2em 1em;
+        text-decoration: none;
+        color: #1b1c20;
+        font-size: 1rem;
+    }
+    .menu-bar__item:hover{
+        padding: 2em 1em;
+        text-decoration: underline;
+        color: #ffffff;
+        font-size: 1rem;
+        background-color: #1b1c20;
+        transition: background-color .3s;
+    }
+    .logos__container--social-media{
+        align-items: center;
+        width: 100%;
+    }
+
+    .toggle__input{
+        display: none;
+    }
+    
+    .social-media__logo:hover{
+    transform: scale(1.25);
+    }
+    .input-nombre, .input-email, .input-edad, .input-rol, .input-fecha{
+        padding: 0.5em;
+        width: 60%;
+    }
+    .input-coment{
+        width: 50%;
+    }
+    
+    .send{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .input-nombre, .input-email, .input-edad, .input-rol, .input-fecha{
+        padding: 0.5em;
+        width: 50%;
+    }
+}

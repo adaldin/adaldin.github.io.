@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="stylesheet-contact.css">
+</head>
+
+<body>
+    <header class="header__container">
+        <img class="main-logo" src="../img/logo.svg" alt="Html & CSS logo"></img>
+        <input type="checkbox" class="checkbox__button" id="toggle__input">
+        <label class="toggle__input toggle__input--open" for="toggle__input">&#9776;</label>
+        <label class="toggle__input toggle__input--close" for="toggle__input">&#120299;</label>
+        <nav class="nav__container">
+            <ul class="menu-bar__list">
+                <li><a class="menu-bar__item" href="../index.html">HOME</a></li>
+                <li><a class="menu-bar__item" href="../board-page/index-board.html">BOARD</a></li>
+                <li><a class="menu-bar__item" href="../contact-page/index-contact.html">CONTACTO</a></li>
+            </ul>
+            <div class="logos__container--aligner">
+                <div class="logos__container--social-media">
+                    <a href="https://www.facebook.com/">
+                        <img class="social-media__logo logo__facebook" src="../img/fb-logo.png"
+                            alt="Facebook logo">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img class="social-media__logo logo__twitter" href="https://www.twitter.com/"
+                            src="../img/twit-logo.png" alt="Twitter logo">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img class="social-media__logo logo__youtube" href="https://www.youtube.com/"
+                            src="../img/yt-logo.png" alt="Youtube logo">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img class="social-media__logo logo__instagram" src="../img/inst-logo.png"
+                            alt="Instagram logo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav__container--desktop">
+            <ul class="menu-bar__list">
+                <li><a class="menu-bar__item" href="../index.html">HOME</a></li>
+                <li><a class="menu-bar__item" href="../board-page/index-board.html">BOARD</a></li>
+                <li><a class="menu-bar__item" href="../contact-page/index-contact.html">CONTACTO</a></li>
+            </ul>
+            <div class="logos__container--aligner">
+                <div class="logos__container--social-media">
+                    <a href="https://www.facebook.com/">
+                        <img class="social-media__logo logo__facebook" src="../img/fb-logo.png"
+                            alt="Facebook logo">
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <img class="social-media__logo logo__twitter" href="https://www.twitter.com/"
+                            src="../img/twit-logo.png" alt="Twitter logo">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img class="social-media__logo logo__youtube" href="https://www.youtube.com/"
+                            src="../img/yt-logo.png" alt="Youtube logo">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img class="social-media__logo logo__instagram" src="../img/inst-logo.png"
+                            alt="Instagram logo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <form action="http://google.com" method="get">
+        <div class="contenedor-padre">
+            <h1 class="titulo1">Formulario de contacto</h1>
+            <h2 class="titulo2">Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</h2>
+            <p>Nombre</p>
+            <div>
+                <input class="input-nombre" type="text" id="name" name="nombre" placeholder="Introduce tu nombre"
+                    required></input>
+            </div>
+            <p>Email</p>
+            <div>
+                <input class="input-email" type="email" id="email" name="correo" placeholder="Introduce tu Email"
+                    required>
+            </div>
+            <p>Edad</p>
+            <div>
+                <input class="input-edad" type="number" min="18" name="años"
+                    placeholder="Introduce tu edad, debes ser mayor de edad" required>
+            </div>
+            <p>¿Qué rol describe mejor tu situación actual?</p>
+            <div>
+                <select class="input-rol" name="rol" type="text" required>
+                    <option>Selecciona tu rol actual</option>
+                    <option>Estudiante</option>
+                    <option>Trabajo a tiempo completo</option>
+                    <option>Freelance</option>
+                    <option>Buscando trabajo</option>
+                </select>
+            </div>
+            <div class="recomendar">
+                <p>¿Recomendarías esta página a un conocido?</p>
+                <div class="seleccionar">
+                    <label for="yes">Definitivamente sí</label>
+                    <input type="radio" name="recomendacion" id="yes" class="color__change">
+
+                    <label for="maybe">Quizás</label>
+                    <input type="radio" name="recomendacion" id="maybe" class="color__change">
+
+                    <label for="not-sure">No estoy seguro</label>
+                    <input type="radio" name="recomendacion" id="not-sure" class="color__change">
+                </div>
+            </div>
+            <p>¿Qué recomendaciones te gustaría recibir? (Marca todas las que apliquen)</p>
+            <div class="recomendaciones">
+                <div class="frontend">
+                    <input type="checkbox" name="front" id="reco">
+                    <label for="reco">Proyectos Fron-end</label>
+                </div>
+                <div class="backend">
+                    <input type="checkbox" name="back" id="reco">
+                    <label for="reco">Proyectos Back-end</label>
+                </div>
+                <div class="media">
+                    <input type="checkbox" name="social" id="reco">
+                    <label for="reco">Social media (Marketing)</label>
+                </div>
+                <div class="juegos">
+                    <input type="checkbox" name="videojuegos" id="reco">
+                    <label for="reco">Desarrollo de Videojuegos</label>
+                </div>
+                <div class="ux">
+                    <input type="checkbox" name="uxui" id="reco">
+                    <label for="reco">Tutoriales de UX/UI</label>
+                </div>
+                <div class="other">
+                    <input type="checkbox" name="otros" id="reco">
+                    <label for="reco">Otros</label>
+                </div>
+            </div>
+            <p>¿Cuándo preferirías que te contactásemos?</p>
+            <div>
+                <input class="input-fecha" type="datetime-local" name="fecha" min="2022-01-01" required>
+            </div>
+
+            <p>¿Otros comentarios o sugerencias?</p>
+            <div>
+                <textarea class="input-coment" placeholder="Introduzca sus comentarios..." name="coments"></textarea>
+            </div>
+
+            <div>
+                <input class="send" type="submit" name="enviar">
+            </div>
+        </div>
+    </form>
+</body>
+
+ <footer class="footer__container">
+        <p class="footer__text">Copyright© mi equipo 2021</p>
+    </footer>
+
+</html>
