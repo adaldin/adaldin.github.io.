@@ -14,6 +14,9 @@
     src: url('../fonts/Oswald-SemiBold.ttf');
     src: url('../fonts/Oswald-VariableFont_wght.ttf');
 }
+body {
+    font-family: 'Oswald-bold';
+  }
 .header__container {
     width: 100%;
     height: fit-content;
@@ -104,7 +107,7 @@
 }
 .contenedor-padre{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 20%),
-    url(./assets/img/img-background-form.jpg) fixed;
+    url(../img/img-background-form.jpg) fixed;
     width: 100%;
     height: 100%;
     position: relative;
