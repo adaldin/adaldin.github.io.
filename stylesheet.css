@@ -216,6 +216,7 @@ padding-bottom: 5%;
 .card-back__mountain{
   transform: rotateY(180deg);
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 /* LAKE */
 .card__lake{
@@ -239,6 +240,7 @@ padding-bottom: 5%;
   position: absolute;
   width: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 .card-back__lake{
   background-color: #313131;
@@ -269,6 +271,7 @@ padding-bottom: 5%;
 .card-back__lake{
   transform: rotateX(180deg);
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 /* OCEAN */
 .card__ocean{
@@ -292,6 +295,7 @@ padding-bottom: 5%;
   position: absolute;
   width: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 .card-back__ocean{
   background-color: #313131;
@@ -322,6 +326,7 @@ padding-bottom: 5%;
 .card-back__ocean{
   transform: rotateY(180deg);
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* PRICING-CARDS */
@@ -607,11 +612,16 @@ font-size: 5vw;
   flex-wrap: wrap;
   gap: 1rem;  
 }
-.circle__container{
+.circle__container {
   position: absolute;
   top: -1rem;
-  right: 0;
-}
+  left: 80%;
+   }
+.pricing__card:hover .circle__container{
+  transform: rotate(360deg);
+  transition: 0.5s ease;
+  }
+  
 .pricing__card:hover{
  transform: scale(1.08);
  transition: 0.3s linear;
