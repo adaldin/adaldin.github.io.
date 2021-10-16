@@ -480,7 +480,7 @@ font-family: 'Oswald-regular';
   align-items: center;
   justify-content: center;
   background-color: #1b1c20;
-  min-height: 2rem;
+  min-height: 4rem;
 }
 
 .footer__text {
