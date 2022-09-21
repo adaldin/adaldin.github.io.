@@ -1,6 +1,5 @@
 <div id="header" align="center">
-
-  <img src="https://user-images.githubusercontent.com/18453013/191547438-35542d06-acf7-411d-b43c-c791cec94ecb.gif"/>
+  <img src="https://user-images.githubusercontent.com/18453013/191553092-c8ff165d-139b-45db-98af-4ee24226b1af.gif"/>
   <p>Alejandra Daldin </p>
 </div>
 # TooGoodToGo
