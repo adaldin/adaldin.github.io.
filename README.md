@@ -27,6 +27,7 @@ Check the deployed project by clicking [here!](https://adaldin.github.io/adaldin
 5. Open a Pull Request
 
 ## Author ✍️
+[@TheGuzman](http://github.com/adaldin)
 [@adaldin](http://github.com/adaldin)
 
 
