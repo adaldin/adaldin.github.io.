@@ -1,8 +1,3 @@
-<div id="header" align="center">
-  <img src="https://user-images.githubusercontent.com/18453013/192013441-a19d486a-8983-48fb-a6cf-d03df1556bb8.gif"/>
-</div>
-
---------------------------------------------------
 # TOO GOOD TO GO
 ToGoodToGo is web site builded in HTML & CSS with Responsive Design. It was part of an exercise to improve skills around  Mobile First Design concept, Responsive Design,Semantic HTML, and CSS (flexbox,animations,mediaquery,etc ). The idea was to follow a project coming from UX/UI and adapt the content to ensure that the page had a perfect pixel design.
 
