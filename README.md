@@ -7,11 +7,11 @@
 ToGoodToGo is web site builded in HTML & CSS with Responsive Design. It was part of an exercise to improve skills around  Mobile First Design concept, Responsive Design,Semantic HTML, and CSS (flexbox,animations,mediaquery,etc ). The idea was to follow a project coming from UX/UI and adapt the content to ensure that the page had a perfect pixel design.
 
 
-## Take a look closer🔍
+## Take a look closer 🔍
 Check the deployed project by clicking [here!](https://adaldin.github.io/adaldin.github.io./)
 <div align="center">
   <a href="https://tetrispractice.netlify.app" target="blank">
-   <img src="https://user-images.githubusercontent.com/18453013/192245542-8cd4a916-6658-45a7-99c0-b432ec9fd838.gif" /></a>
+   <img src="https://user-images.githubusercontent.com/18453013/192259401-3285eeb8-f0a7-48ef-b2ed-5028fa02d3c2.gif" /></a>
 </div>
 
 ## Builded with ⚙️
@@ -33,4 +33,5 @@ Check the deployed project by clicking [here!](https://adaldin.github.io/adaldin
 
 ## Author ✍️
 [@adaldin](http://github.com/adaldin)
+
 
