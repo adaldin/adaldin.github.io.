@@ -5,7 +5,7 @@ ToGoodToGo is web site builded in HTML & CSS with Responsive Design. It was part
 ## Take a look closer 🔍
 Check the deployed project by clicking [here!](https://adaldin.github.io/adaldin.github.io./)
 <div align="center">
-  <a href="https://tetrispractice.netlify.app" target="blank">
+  <a href="https://adaldin.github.io/adaldin.github.io./" target="blank">
    <img src="https://user-images.githubusercontent.com/18453013/192259401-3285eeb8-f0a7-48ef-b2ed-5028fa02d3c2.gif" /></a>
 </div>
 
